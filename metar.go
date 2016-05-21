@@ -107,23 +107,3 @@ func FetchCurrentStationWeather(station string) (*Result, error) {
 
 	return &r.Data.Results[0], nil
 }
-
-// InHgTohPa converts "inch of mercury" to "hectopascal"
-func InHgTohPa(inHg float64) float64 {
-	return inHg * 33.8638866667
-}
-
-// KtsToMs converts "knots" to "meters per second"
-func KtsToMs(kts float64) float64 {
-	return kts * 0.514444
-}
-
-// StatMileToKm converts "statute miles" to "kilometers"
-func StatMileToKm(sm float64) float64 {
-	return sm * 1.60934
-}
-
-// MbTohPa converts "millibar" to "hectopascal"
-func MbTohPa(mb float64) float64 {
-	return mb * 0.1
-}
